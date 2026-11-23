@@ -14,6 +14,7 @@ Detailed results and evidence are stored in dated folders under Tests.
 | Direct fan power | Fan spins smoothly from its external 12 V supply. | Observed by builder |
 | Standalone fan PWM commands | Fan responds to repeating 100%, 60% and 30% commands, held for 15 seconds each. | Qualitatively demonstrated; see [fan test evidence](Tests/2026-10-26-fan-pwm/README.md) |
 | PWM waveform | Oscilloscope confirms frequency and duty cycle at the fan control input. | Not measured; firmware frequency calculated as 25 kHz |
-| Fan RPM | Tachometer readings quantify speed at each command. | Not tested |
+| Fan RPM | Tachometer readings quantify speed at each command. | Pulse counting demonstrated; RPM assumes two pulses per turn. See [results](Tests/2026-11-21-fan-rpm/README.md) |
+| Absolute RPM validation | Exact pulses per turn are established and speed is checked independently. | Pending |
 | Temperature-based fan control | Fan command changes automatically with measured temperature. | Not implemented |
 | Enclosure cooling | Controlled heat-load tests compare temperature with different fan settings. | Planned |

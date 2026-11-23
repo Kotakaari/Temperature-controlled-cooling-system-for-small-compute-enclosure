@@ -7,22 +7,27 @@ An Arduino-based cooling prototype for a small compute enclosure. The project ex
 - DS18B20 temperature readings demonstrated, including response to hand warming and cooling after release.
 - Standalone fan test completed with repeating 100%, 60% and 30% PWM commands, held for 15 seconds each. Changes in fan behaviour were observed by the builder and recorded on video.
 - Temperature sensing and fan control are currently separate sketches.
+- Tachometer pulse counting now runs alongside PWM control. The initial test produced mean displayed speeds of approximately 1,894, 1,247 and 743 RPM at 100%, 60% and 30% commands respectively, assuming two pulses per turn.
 
-RPM, PWM waveform and temperature measurement accuracy have not yet been verified with reference instruments. PWM command percentages are not measured percentages of maximum RPM.
+Absolute RPM, PWM waveform and temperature measurement accuracy have not yet been verified with reference instruments. The tachometer pulses-per-turn assumption remains unconfirmed for this exact fan. PWM command percentages are not measured percentages of maximum RPM.
 
 ## Documentation
 
 - [Test plan and status](Docs/test-plan.md)
 - [Initial temperature sensor test](Docs/Tests/2026-10-19-temperature-sensor/README.md)
 - [Fan PWM test: notes, videos and Serial Monitor capture](Docs/Tests/2026-10-26-fan-pwm/README.md)
+- [PWM and RPM test results](Docs/Tests/2026-11-21-fan-rpm/README.md)
+- [PWM and tachometer wiring](Docs/fan-rpm-wiring.md)
+- [Project logbook](Docs/Excel%20Files/Tempreture-controlled%20cooling%20system%20Logbook.xlsx)
 
 ## Firmware
 
 - [Temperature sensor sketch](temperature_sensor/temperature_sensor.ino)
 - [Standalone fan test sketch](fan_test/fan_test.ino)
+- [Fan PWM and RPM sketch with explanation](fan_rpm_test/README.md)
 
 Each Arduino sketch is kept in its own matching folder. The fan test targets an Arduino Uno R3 / ATmega328P and configures Timer1 directly; it is not portable to every Arduino board without changes.
 
 ## Next steps
 
-Measure fan RPM, combine temperature sensing with fan commands, and design and test the enclosure with a controlled heat source.
+Validate the RPM conversion, combine temperature sensing with fan commands and RPM reporting, then design and test the enclosure with a controlled heat source.
