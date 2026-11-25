@@ -2,6 +2,12 @@
 
 An Arduino-based cooling prototype for a small compute enclosure. The project explores temperature sensing, PWM fan control and automatic cooling in response to temperature.
 
+**Latest bench milestone: 24 November 2026.** Temperature sensing, fan PWM control and RPM reporting now run together. Testing demonstrated automatic speed commands, full-speed fallback when the sensor data connection is removed, and recovery when it is restored. Enclosure design and controlled heat-load testing are next.
+
+![Integrated temperature-controlled fan circuit](Docs/images/temperature-fan-controller-circuit.png)
+
+The image is an explanatory schematic. See the [wiring guide](Docs/temperature-fan-wiring.md) for connections and the [latest test record](Docs/Tests/2026-11-24-temperature-fan-integration/README.md) for original circuit photos, Serial Monitor screenshots and measurement limitations.
+
 ## Current progress
 
 - DS18B20 temperature readings demonstrated, including response to hand warming and cooling after release.
