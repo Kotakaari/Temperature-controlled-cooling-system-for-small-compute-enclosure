@@ -28,6 +28,7 @@ Absolute RPM, PWM waveform and temperature measurement accuracy have not yet bee
 - [Temperature sensor sketch](temperature_sensor/temperature_sensor.ino)
 - [Standalone fan test sketch](fan_test/fan_test.ino)
 - [Fan PWM and RPM sketch with explanation](fan_rpm_test/README.md)
+- [Integrated temperature controller: sketch, setup and code guide](temperature_fan_controller/README.md)
 
 Each Arduino sketch is kept in its own matching folder. The fan test targets an Arduino Uno R3 / ATmega328P and configures Timer1 directly; it is not portable to every Arduino board without changes.
 
