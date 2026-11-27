@@ -35,4 +35,4 @@ RPM uses an unverified assumption of two tach pulses per revolution. Temperature
 
 The builder reviewed the sketch's libraries, pin definitions, sensor objects, local-variable scope, linear temperature-to-command calculation, initialization, blocking conversion setting, validity checks, full-speed fallback, function arguments, pulse counting, timed count/save/reset sequence, RPM calculation and Serial Monitor output. Familiar PWM and tach sections were revisited by comparison with the prior sketch.
 
-Next: confirm pulses per revolution and plan reference checks, then build the enclosure and safely mount the dummy heat load. Review temperature thresholds, sensor placement and minimum fan command using those tests.
+Next, measure the hardware and plan enclosure airflow, sensor placement and heat-load mounting. Use the enclosure tests to review the temperature thresholds and minimum fan command. Keep pulses per revolution and reference measurements on the validation list.
