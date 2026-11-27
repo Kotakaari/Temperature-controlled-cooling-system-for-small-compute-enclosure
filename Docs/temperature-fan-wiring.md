@@ -6,6 +6,8 @@ Tested on 24 November 2026 with an ELEGOO Uno R3, DS18B20 probe and ARCTIC P12 P
 
 The diagram is an AI-generated explanatory schematic, checked against the connections below. It is not a breadboard placement guide or a photograph of test evidence. Colors identify signal roles rather than actual cable colors. All ground symbols represent the same shared ground. The 25 kHz label is calculated from firmware settings, not measured with an oscilloscope.
 
+The 27 November diagram correction makes the sensor VCC junction explicit and shows the fan's built-in PWM pull-up. The sensor's 4.7 kOhm resistor connects VCC/5 V to DAT, with GND remaining separate. The internal fan pull-up connects its PWM input to its internal logic supply; its resistance and supply voltage are not specified here. It is not an additional external resistor or a connection from PWM to the 12 V motor supply. This correction changes the illustration, not the tested circuit.
+
 | Connection | Destination / purpose |
 |---|---|
 | Arduino USB | Powers the Uno and its 5 V sensor circuitry |
