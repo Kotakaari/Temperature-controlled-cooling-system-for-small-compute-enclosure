@@ -1,6 +1,8 @@
 # Temperature-Controlled Cooling System
 
-An Arduino Uno prototype that adjusts a four-wire fan's PWM command based on temperature and reports fan RPM from tachometer pulses. The controller has been tested on a breadboard and is ready for enclosure design.
+An Arduino Uno prototype that adjusts a four-wire fan's PWM command based on temperature and reports fan RPM from tachometer pulses. The controller has been tested on a breadboard, and the enclosure shell has been modeled in Autodesk Fusion.
+
+**Enclosure design · 27 November 2026.** The assembly includes a vented intake, fan end panel, removable lid, and separate USB and power cable notches. [Enclosure CAD files, images, and build notes](Docs/Enclosure/README.md).
 
 **Latest bench test · 24 November 2026.** The controller increased the fan command as the probe warmed and returned to its minimum as it cooled. Disconnecting the sensor data wire commanded full speed. Reconnecting it restored temperature control without a reset.
 
@@ -40,4 +42,4 @@ The integrated sketch targets the Arduino Uno R3 / ATmega328P and configures Tim
 
 ## Next steps
 
-Measure the hardware, plan intake and exhaust airflow, and model the enclosure in SolidWorks. After assembly, use a controlled heat load to test cooling and tune the temperature thresholds and minimum fan command.
+Check the fan and cable fit, decide how to secure the lid and hardware, and fabricate the enclosure. Test cooling under a controlled heat load before tuning the temperature thresholds and minimum fan command.
